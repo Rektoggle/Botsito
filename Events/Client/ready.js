@@ -1,3 +1,4 @@
+const {ActivityType} = require ('discord.js')
 const {Client} = require('discord.js')
 const mongoose = require('mongoose')
 const config = require ('../../config.json');
@@ -20,6 +21,7 @@ module.exports = {
         });
 
         console.log(`El ${client.user.username} está online`);
+
      
     }
 };

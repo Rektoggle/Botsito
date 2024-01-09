@@ -11,6 +11,6 @@ module.exports = {
      * @param {Client} client 
      */
     async execute(interaction, client) {
-        return interaction.reply({ content: `Hola ${interaction.user}`, ephemeral: true })
+        return interaction.reply({ content: `Hola ${interaction.user}`})
     }
 };
