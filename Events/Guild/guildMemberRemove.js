@@ -1,6 +1,6 @@
-const { GuildMember, Embed } = require('discord.js')
+const { GuildMember, EmbedBuilder } = require('discord.js')
 const welcomeSchema = require('../../Models/leaveSchema');
-const { EmbedBuilder } = require('@discordjs/builders');
+
 
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
             .setTitle(`${member.user.username} Acaba de retirarse  ${member.guild.name}, nakama que tenga buenas aventuras`)
             .setDescription(mensaje)
             .setImage(imagen)
-            .setColor(0x0099FF)
+            .setColor('Random')
             .setFooter({ text: `${member.user.id}. Ahora somos: ${member.guild.memberCount} nakamas` })
 
         return channel?.send({ embeds: [embed] })

@@ -3,7 +3,7 @@ const ms = require('ms')
 module.exports = {
     Cooldown: ms('1m'),
     data: new SlashCommandBuilder()
-        .setName('plantillazzz')
+        .setName('kiara')
         .setDescription('Este comando es de prueba'),
     /**
      * 
@@ -11,6 +11,6 @@ module.exports = {
      * @param {Client} client 
      */
     async execute(interaction, client) {
-        return interaction.reply({ content: `Hola ${interaction.user}`})
+        return interaction.reply({ content: `Ahora si entiendes ${interaction.user}?`})
     }
 };

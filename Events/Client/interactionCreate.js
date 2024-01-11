@@ -4,7 +4,7 @@ const cooldown = new Set();
 
 module.exports = {
     name: 'interactionCreate',
-    once: false,
+    once: true,
     /**
      * 
      * @param {ChatInputCommandInteraction} interaction 
@@ -15,7 +15,7 @@ module.exports = {
         if (!interaction.isChatInputCommand) return;
 
         const command = client.commands.get(interaction.commandName);
-        const cooldowns = await command.Cooldown;
+        const cooldowns = await command.Cooldown
 
         if (command) {
             if (!command) return interaction.reply({ content: 'comando no válido', ephemeral: true })
