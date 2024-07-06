@@ -5,6 +5,10 @@ const config = require('./config.json');
 const { handleErrors } = require('./Functions/antiCrash');
 const { loadEvents } = require('./Functions/loadEvents');
 const { loadCommands } = require('./Functions/loadCommands');
+
+
+
+
 const client = new Client({
     intents: [Object.keys(GatewayIntentBits)],
     partials: [Object.keys(Partials)],
